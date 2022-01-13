@@ -2,7 +2,7 @@ package com.github.tiagogomes187.dsmovie.dto;
 
 import com.github.tiagogomes187.dsmovie.entities.Movie;
 
-public class MovieDto {
+public class MovieDTO {
 
 	private Long id;
 	private String title;
@@ -10,11 +10,11 @@ public class MovieDto {
 	private Integer count;
 	private String image;
 
-	public MovieDto() {
+	public MovieDTO() {
 
 	}
 
-	public MovieDto(Long id, String title, Double score, Integer count, String image) {
+	public MovieDTO(Long id, String title, Double score, Integer count, String image) {
 		this.id = id;
 		this.title = title;
 		this.score = score;
@@ -22,7 +22,7 @@ public class MovieDto {
 		this.image = image;
 	}
 	
-	public MovieDto(Movie movie) {
+	public MovieDTO(Movie movie) {
 		id = movie.getId();
 		title = movie.getTitle();
 		score = movie.getScore();
